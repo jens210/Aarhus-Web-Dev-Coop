@@ -1,0 +1,22 @@
+
+ul li {
+    margin-right: 3vw;
+    list-style: none;
+}
+
+    ul li a {
+        color: #666;
+    }
+
+img {
+    width: 100%;
+}
+
+
+.field-validation-error {
+    color: red;
+}
+
+.page-footer {
+    background-color: #f8f9fa;
+}

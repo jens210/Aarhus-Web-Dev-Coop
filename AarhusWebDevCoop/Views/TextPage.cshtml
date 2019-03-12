@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.TextPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<h1>
+    @Model.Content.GetPropertyValue("header")
+</h1>
+<p> 
+@Model.Content.GetPropertyValue("mainContent")
+</p>

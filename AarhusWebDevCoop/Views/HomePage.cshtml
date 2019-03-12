@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+<div class="container"> 
+
+<h1>  @Model.Content.GetPropertyValue("siteTitle")</h1>
+<p>  @Model.Content.GetPropertyValue("mainContent")</p>
+</div>
+ @CurrentPage.GetGridHtml("Grid")

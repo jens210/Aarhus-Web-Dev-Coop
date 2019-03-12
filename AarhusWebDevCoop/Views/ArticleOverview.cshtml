@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ArticleOverview>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+<div class="container">
+<div class="row"> 
+    <div class="col-4">
+        <h1> @Umbraco.Field("articlesTitle")</h1>
+     </div>
+     
+</div>
+     <div class="col-4">
+        <p> @Umbraco.Field("articlesBodyText")</p>
+     </div>
+     <ol>
+    @foreach(var page in CurrentPage.Children)
+    {
+    <li>
+        <a href="@page.Url"> @page.name</a>
+    </li>
+    }
+</ol>
+</div>
+
+
+<div class="col-4">
+
+</div>
