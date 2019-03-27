@@ -1,12 +1,11 @@
+.form-inline.my-2.my-lg-0 {
+    display: none;
+}
 
 ul li {
     margin-right: 3vw;
     list-style: none;
 }
-
-    ul li a {
-        color: #666;
-    }
 
 img {
     width: 100%;
@@ -18,5 +17,14 @@ img {
 }
 
 .page-footer {
-    background-color: #f8f9fa;
+    background-color: #3C3E40;
+    color: #ffffff;
 }
+
+    .page-footer ul li a {
+        color: #eae6e6;
+    }
+
+        .page-footer ul li a:hover {
+            color: #5E87FC;
+        }

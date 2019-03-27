@@ -18,7 +18,7 @@
     var selection = site.Children.Where(x => x.DocumentTypeAlias == "projectsOverview").First().Children
     .Where(x => x.HasValue("projectStatus") &&
     Umbraco.GetPreValueAsString(x.GetPropertyValue<int>
-        ("projectStatus")) == "Completed").OrderBy("CreateDate desc").Take(5).ToArray();
+        ("projectStatus")) == "Completed").OrderBy("CreateDate desc").Take(3).ToArray();
 
 }
 

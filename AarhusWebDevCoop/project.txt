@@ -1,0 +1,25 @@
+﻿Git: https://github.com/jens210/AarhusWebDevCoop
+
+Members 
+
+# Guest
+Username: guest
+Password: guest123456
+
+# Active
+Username: hans
+Password: 1234567890
+
+Backoffice users
+
+# Editor
+Email: jane@wilfred.com
+Password: jane123456
+
+# Writer
+Email: tim@Hansson.com
+Password: tim1234567
+
+# Admin
+Email: jensvk94@gmail.com
+Password: root123456

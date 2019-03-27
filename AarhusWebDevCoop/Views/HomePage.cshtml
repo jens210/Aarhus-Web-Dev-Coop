@@ -7,5 +7,8 @@
 
 <h1>  @Model.Content.GetPropertyValue("siteTitle")</h1>
 <p>  @Model.Content.GetPropertyValue("mainContent")</p>
+@CurrentPage.GetGridHtml("grid")
+
+@Umbraco.RenderMacro("listNewestProjects")
 </div>
- @CurrentPage.GetGridHtml("Grid")
+
