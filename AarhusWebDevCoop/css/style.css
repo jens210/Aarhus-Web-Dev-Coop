@@ -11,6 +11,10 @@ img {
     width: 100%;
 }
 
+.memberImg {
+    width: 25%;
+    height: auto;
+}
 
 .field-validation-error {
     color: red;
@@ -28,3 +32,21 @@ img {
         .page-footer ul li a:hover {
             color: #5E87FC;
         }
+
+
+/* Smartphones */
+
+@media screen and (max-device-width: 480px) and (orientation: portrait), screen and (max-device-width: 740px) and (orientation: landscape), screen and (max-width:740px) {
+    .memberImg {
+        width: 90%;
+    }
+}
+
+
+/* Tablets  */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .memberImg {
+        width: 50%;
+    }
+}

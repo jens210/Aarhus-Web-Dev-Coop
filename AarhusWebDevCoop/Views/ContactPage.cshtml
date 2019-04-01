@@ -4,9 +4,9 @@
     Layout = "Master.cshtml";
 }
 
-<h2>@CurrentPage.Name</h2>
-<div class="container">
 
+<div class="col-8">
+<h3>@CurrentPage.Name</h3>
     @if (TempData["success"] == null)
     {
         // display the form

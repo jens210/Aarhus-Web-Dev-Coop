@@ -27,6 +27,7 @@ namespace AarhusWebDevCoop.Controllers
             }
             else
             {
+                /*
                 // change email info!
                 MailMessage message = new MailMessage();
                 message.To.Add("toEmail@gmail.com");
@@ -47,7 +48,7 @@ namespace AarhusWebDevCoop.Controllers
                     smtp.Send(message);
 
                 }
-
+                */
                 // Creates message in Umbraco content section
                 IContent msg = Services.ContentService.CreateContent(model.Subject, CurrentPage.Id, "message");
                 msg.SetValue("messageName", model.Name);

@@ -4,24 +4,27 @@
     Layout = "Master.cshtml";
 }
 
-<h1> Members</h1>
+
 
 @{
     var memberService = ApplicationContext.Current.Services.MemberService;
     var members = memberService.GetMembersByGroup("Active");
 
+
 }
 
 <ul>
+    <h1> Members</h1>
     @foreach (var member in members)
     {
+        var img = member.GetValue<string>("Image");
 
+        <li><img class="memberImg" src="@(img != null ? img : "")" /></li>
         <li>Name: @member.Name</li>
         <li>Address: @member.GetValue("Address")</li>
         <li>Zip: @member.GetValue("Zip")</li>
         <li>City: @member.GetValue("City")</li>
         <li>Mobile: @member.GetValue("Mobile")</li>
-        <img src="@member.GetValue("Photo")" />
         <li>
             Skills:
             @{
@@ -38,8 +41,6 @@
             }
         </li>
         <br />
-
-
     }
 </ul>
 
